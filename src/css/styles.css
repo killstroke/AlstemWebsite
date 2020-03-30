@@ -1,5 +1,5 @@
 .jumbotron-fluid{
-  margin-bottom:50px;
+  margin-bottom:30px;
 }
 header{
  padding: 10px;
@@ -8,4 +8,8 @@ header{
 
 .card{
   margin-bottom:20px;
+}
+
+footer{
+  background: darkgray;
 }
