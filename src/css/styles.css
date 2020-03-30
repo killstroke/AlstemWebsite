@@ -13,3 +13,7 @@ header{
 footer{
   background: darkgray;
 }
+
+.nav{
+  font-size:25px;
+}
