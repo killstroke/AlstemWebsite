@@ -1,6 +1,11 @@
-.jumbotron{
-  padding:70px 30px 70px 30px;
-  margin:0px auto;
-  background: blue;
-  color: floralwhite;
+.jumbotron-fluid{
+  margin-bottom:50px;
+}
+header{
+ padding: 10px;
+  margin:5px;
+}
+
+.card{
+  margin-bottom:20px;
 }
