@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbotron-fluid{
+  margin-bottom:30px;
+}
+header{
+  padding: 10px;
+  margin:5px;
+}
+
+.card{
+  margin-bottom:20px;
+}
+
+footer{
+  background: darkgray;
+}
+
+.nav{
+  font-size:25px;
+}
+
+

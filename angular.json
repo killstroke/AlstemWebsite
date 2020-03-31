@@ -121,6 +121,125 @@
           }
         }
       }
+    },
+    "sPages": {
+      "root": "projects/sPages/",
+      "sourceRoot": "projects/sPages/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/sPages",
+            "index": "projects/sPages/src/index.html",
+            "main": "projects/sPages/src/main.ts",
+            "polyfills": "projects/sPages/src/polyfills.ts",
+            "tsConfig": "projects/sPages/tsconfig.app.json",
+            "assets": [
+              "projects/sPages/src/favicon.ico",
+              "projects/sPages/src/assets"
+            ],
+            "styles": [
+              "projects/sPages/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/sPages/src/environments/environment.ts",
+                  "with": "projects/sPages/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "sPages:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sPages:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sPages:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sPages/src/test.ts",
+            "polyfills": "projects/sPages/src/polyfills.ts",
+            "tsConfig": "projects/sPages/tsconfig.spec.json",
+            "karmaConfig": "projects/sPages/karma.conf.js",
+            "styles": [
+              "projects/sPages/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/sPages/src/favicon.ico",
+              "projects/sPages/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sPages/tsconfig.app.json",
+              "projects/sPages/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "sPages-e2e": {
+      "root": "projects/sPages-e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/sPages-e2e/protractor.conf.js",
+            "devServerTarget": "sPages:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sPages:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/sPages-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Alstem"
