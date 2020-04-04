@@ -8,12 +8,14 @@ import { ServiceIpscGenComponent } from './service-ipsc-gen/service-ipsc-gen.com
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { HeaderComponent } from './header/header.component';
+import { ProductComponent } from './product/product.component';
 
 
 const appRoutes: Routes = [
   { path: 'ser', component: ServicesComponent },
   { path: 'serIpsGen', component: ServiceIpscGenComponent },
   { path: '', redirectTo: '/ser', pathMatch: 'full' },
+  { path: 'prod', component: ProductComponent}
 ];
 
 @NgModule({
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     ServiceIpscGenComponent,
     FooterComponent,
     ServicesComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductComponent
   ],
 
   providers: [],
