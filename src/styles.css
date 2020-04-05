@@ -19,4 +19,11 @@ footer{
   font-size:25px;
 }
 
+.card-body{
+  text-align: center;
+  vertical-align: middle;
+  border: black 20px;
+  mso-border-shadow: yes;
+}
+
 
