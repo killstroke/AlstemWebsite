@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container border-top pt-2">
   <div class="row" tag="nav words">
     <nav class="text-black-50" >
       <a routerLink="/ser">Home</a> >
       <a routerLink="/prod">Products</a> >
       <a href="/js/">Cell Line Generation Kits</a> >
-      <a routerLink="/prodTemp">iPSC Kit</a>
+      <a routerLink="/prodTemp">iPSC Kit</a>>
     </nav>
   </div>
 
@@ -45,19 +45,23 @@
     </div>
     <div class="col-md pl-md-5">
 
-      <div class="row">
-        <div class="form-group mb-2">
-          <span><h3>Catalog no. RF202</h3></span>
-          <br>
-          <span>Size: 1 kit</span>
+      <div class="container d-inline-flex justify-content-between">
+        <div class="col-5 border-secondary">
+          <span style="font-size: 1.5em"><b>Catalog no.</b> RF202</span>
+          <p class="pt-2">Size: 1 kit</p>
         </div>
-        <div class="form-inline mx-sm-3 mb-2">
-          <div class="form-group">
+        <div class="col-5 offset-1 p-2">
+          <div class="row align-middle">
+            <span>$625</span>
+          </div>
+          <div class="row form-group form-inline pt-1">
           <label class="text-black-50 pr-2">Qty</label>
-          <input type="num" class="form-control" id="number" placeholder="1" style="width:50px">
-        </div>
-        <button type="btn" class="btn btn-primary mb-2">Add to Cart</button>
-        </div>
+          <input type="num" class="form-control p-2" id="number" placeholder="1" style="width:35px">
+            <div class="pl-3">
+            <button type="btn" class="btn btn-primary">Add to Cart</button>
+            </div>
+         </div>
+       </div>
       </div>
 
       <div class="row" tag="highlight" style="font-size: 1em">
@@ -84,19 +88,53 @@
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Scientific Resources</a>
         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Documents</a>
         <a class="nav-item nav-link" id="nav-publication-tab" data-toggle="tab" href="#nav-publication" role="tab" aria-controls="nav-publication" aria-selected="false">Publications</a>
+        <a class="nav-item nav-link" id="nav-related-tab" data-toggle="tab" href="#nav-related" role="tab" aria-controls="nav-related" aria-selected="false">Related Products</a>
       </div>
     </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="col-5">
-        <p>The human episomal iPSC reprogramming kit from ALSTEM is one of the best choices
+    <div class="tab-content pt-2" id="nav-tabContent">
+      <div class="tab-pane fade show active d-flex" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="col-md-5 pt-2">
+          <span><h5>Description</h5></span>
+        <p class="align-text-top">The human episomal iPSC reprogramming kit from ALSTEM is one of the best choices
           for producing footprint-free and virus-free iPSCs, which provide an ideal source for all
           stages of your pluripotent stem cell research. Optimized by the ALSTEM team, this kit has proven
           to be efficient and successful in inducing pluripotency from several different somatic cell types.</p>
         </div>
-        <div class="col">
-
-
+        <div class="col-md-7 pt-2">
+          <span><h5>Specifications</h5></span>
+          <table class="table">
+            <thead class="thead-light">
+            <tr>
+              <th scope="row">Product Name</th>
+              <th class="text-md-left">Human iPS Cell Reprogramming Episomal Kit</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">Component</th>
+              <td>hiPSC Reprogramming Episomal Vectors (cat.no. RF202_1)
+                RFP Control Vector (cat.no. RF202_2):
+                Each kit contains sufficient material for 10 reprogramming experiments
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Shipping</th>
+              <td>Ambient temperature</td>
+            </tr>
+            <tr>
+              <th scope="row">Storage and Stability</th>
+              <td>Store at -20 °C upon receipt. This product is stable up to 6 months when stored as directed.</td>
+            </tr>
+            <tr>
+              <th scope="row">Quality Control</th>
+              <td>Each lot of Human iPS Cell Reprogramming Episomal Kit is tested to ensure human fibroblasts can be reprogrammed to iPSCs.</td>
+            </tr>
+            <tr>
+              <th scope="row">Restricted Use</th>
+              <td>For Research Use Only. Not for use in diagnostic or therapeutic procedures.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
