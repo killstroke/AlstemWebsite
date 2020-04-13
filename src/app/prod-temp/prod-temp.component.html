@@ -9,7 +9,7 @@
   </div>
 
   <div class="row p-3 b-2">
-  <h2>Episomal iPSC Reprogramming Kit</h2>
+  <h2>{{title}}</h2>
   </div>
 
 
@@ -56,9 +56,9 @@
           </div>
           <div class="row form-group form-inline pt-1">
           <label class="text-black-50 pr-2">Qty</label>
-          <input type="num" class="form-control p-2" id="number" placeholder="1" style="width:35px">
+          <input type="num" class="form-control p-2" id="number" placeholder="1" style="width:35px" [(ngModel)]="num">
             <div class="pl-3">
-            <button type="btn" class="btn btn-primary">Add to Cart</button>
+            <button type="btn" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
             </div>
          </div>
        </div>

@@ -10,6 +10,8 @@ import { ServicesComponent } from './services/services.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './product/product.component';
 import { ProdTempComponent } from './prod-temp/prod-temp.component';
+import {FormsModule} from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 
 const appRoutes: Routes = [
@@ -18,12 +20,14 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/ser', pathMatch: 'full' },
   { path: 'prod', component: ProductComponent},
   { path: 'prodTemp', component: ProdTempComponent},
+  { path: 'cart', component: CartComponent},
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    FormsModule,
   ],
 
   declarations: [
@@ -33,7 +37,8 @@ const appRoutes: Routes = [
     ServicesComponent,
     HeaderComponent,
     ProductComponent,
-    ProdTempComponent
+    ProdTempComponent,
+    CartComponent
   ],
 
   providers: [],
